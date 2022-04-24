@@ -11,23 +11,23 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="static/assets/img/favicon.png" rel="icon">
-  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="booktable/static/assets/img/favicon.png" rel="icon">
+  <link href="booktable/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="booktable/static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="booktable/static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="booktable/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="booktable/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="booktable/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="booktable/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="booktable/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="static/assets/css/style.css" rel="stylesheet">
+  <link href="booktable/static/assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Restaurantly - v3.7.0
@@ -845,7 +845,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="/" method="post" role="form" class="php-email-form">{% csrf_token %}
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -858,7 +858,7 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" rows="8" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>

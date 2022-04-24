@@ -5,3 +5,5 @@ def index(request):
     return render(request, 'restaurant/index.html')
 
 
+
+
